@@ -1,0 +1,19 @@
+---
+  - name: Tap caskroom/cask
+    homebrew_tap:
+      name: caskroom/cask
+      state: present
+
+  - name: Install/upgrade Intellij CE
+    homebrew_cask:
+      name: intellij-idea-ce
+      state: upgraded
+      greedy: yes
+      update_homebrew: yes
+
+#  - name: Install/upgrade Intellij Ultimate
+#    homebrew_cask:
+#      name: intellij-idea
+#      state: upgraded
+#      greedy: yes
+#      update_homebrew: yes
